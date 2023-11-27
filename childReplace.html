@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        margin: 0;
+        background-color: rgb(55, 55, 55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vh;
+        height: 100vh;
+      }
+      .box h1 {
+        color: rgb(63, 63, 63);
+        display: flex;
+        align-items: center;
+        background-color: rgb(248, 246, 246);
+        border-radius: 10px;
+      }
+      #box1 {
+        margin: 10vh;
+      }
+      .box {
+        justify-content: space-between;
+      }
+      .box p {
+        margin: 10vh 10vh 10vh 10vh;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <section class="box" id="box">
+      <p id="h11">hello the world</p>
+
+      <h1 id="h12">hi world</h1>
+
+      <hr />
+      <button>wazab</button>
+    </section>
+    <br />
+
+    <script>
+      let boxco = document.getElementById("box");
+      let remove = document.getElementById("h12");
+      let rep1 = document.getElementById("h11");
+      let newChild = document.createElement("h4");
+      let myNewCo = document.createTextNode("jojo");
+      newChild.append(myNewCo);
+      boxco.replaceChild(newChild, rep1);
+      boxco.removeChild(remove);
+    </script>
+  </body>
+</html>

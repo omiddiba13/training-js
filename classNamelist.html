@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/all project/css/bootstrap.css" />
+  </head>
+  <body class="bg-black">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<button class="btn btn-primary" onclick="changeClass('add')">Add text-danger class</button>
+<button class="btn btn-primary" onclick="changeClass('remove')">remove text-danger class</button>
+<button class="btn btn-primary" onclick="changeClass('toggle')">toggle text-danger class</button>
+</div>
+<div class="col-12"><span id="target1">Lorem, ipsum.</span></div>
+</div>
+
+    <script>
+
+
+      function changeClass(operation){
+const myclasslist= document.getElementById("target1").classList;
+myclasslist[operation]("text-danger")
+
+
+      }
+
+
+    </script>
+  </body>
+</html>

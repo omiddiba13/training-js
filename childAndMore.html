@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        margin: 0;
+        background-color: rgb(55, 55, 55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vh;
+        height: 100vh;
+      }
+      .box h1 {
+        color: rgb(63, 63, 63);
+        display: flex;
+        align-items: center;
+        background-color: rgb(248, 246, 246);
+        border-radius: 10px;
+      }
+      #box1 {
+        margin: 10vh;
+      }
+      .box {
+        justify-content: space-between;
+      }
+      .box p {
+        margin: 10vh 10vh 10vh 10vh;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="box" id="box">
+      <h1 id="hone">hello the world</h1>
+      <hr />
+      <h1 id="hone2">hi world</h1>
+
+      <hr />
+      <!-- <button>wazab</button> -->
+    </div>
+    <br />
+
+    <div id="box1">
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea quod
+        tempora fuga ut recusandae cum quos ad tenetur fugit eius perspiciatis
+        sit, quidem facere, optio corporis pariatur eveniet mollitia!
+      </p>
+
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea quod
+        tempora fuga ut recusandae cum quos ad tenetur fugit eius perspiciatis
+        sit, quidem facere, optio corporis pariatur eveniet mollitia!
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea quod
+        tempora fuga ut recusandae cum quos ad tenetur fugit eius perspiciatis
+        sit, quidem facere, optio corporis pariatur eveniet mollitia!
+      </p>
+    </div>
+
+    <script>
+      let box = document.getElementById("box");
+      let child1 = document.getElementById("hone");
+
+      let newChild = document.createElement("h1");
+      let myNewCo = document.createTextNode("jjjjjj");
+      newChild.appendChild(myNewCo);
+      box.replaceChild(myNewCo, newChild);
+
+      // // document.getElementById("box1").innerHTML ="" ;
+      // document.write(5 + 6);
+      // // window.alert("hello there");
+      // console.log(1 + 2);
+      // document.querySelector("h1").innerHTML = "boss";
+      // let matn = document.querySelectorAll("p.para")[1];
+      // matn.innerHTML = "hello";
+    </script>
+  </body>
+</html>

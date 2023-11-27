@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/all project/css/bootstrap.css" />
+  </head>
+  <body class="flex-column container-fluid">
+    <button onclick="start_timer();">Start</button>
+    <button onclick="stop_timer();">stop</button>
+
+    <script>
+      let MyCounter
+      function start_timer() {
+        MyCounter = setInterval(Counter, 200)
+      }
+
+      function stop_timer() {
+        clearInterval(MyCounter)
+      }
+      let number = 0
+      function Counter() {
+        document.getElementById("show_counter").innerHTML = number++
+      }
+    </script>
+  </body>
+</html>
