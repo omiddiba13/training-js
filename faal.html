@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="faalContainer"></h1>
+
+<script>
+ const faal = ["از خردمندان جوان مراحل بگذرد", " در باغ عشق گلی نمی‌روید.", " عشق نیست جز دردی که فریاد آور است.", " چون خورشید به سر ماه نمی‌خرامد.", " شدم سرخوش ز قول عود و رباب.",
+  " ز آن چشم که خون نیست به جز خون من است.", 
+  " دل من نشسته است و دلارام تا کی", "؟ بیچاره دلم همچو شمعی در بادست.", 
+  " خرم آن روز که تو را دیدم جانباز.",
+   " نالهٔ طوطی بهار می‌آورد، پروانه خود را بر لب گل می‌پروراند."]
+const randomNumber = Math.random() * (faal.longth - 1)
+const randomIndex = Math.round(randomNumber)
+document.getElementById('faalContainer').innerHTML= faal[randomIndex]
+
+
+</script>
+
+</body>
+</html>

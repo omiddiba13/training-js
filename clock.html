@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <h1>my time: <span id="timeContainerTurkey"></span></h1>
+     <h1>my time: <span id="timeContainermy"></span></h1>
+
+     <script>
+ 
+         function showTime() {
+ 
+             const timeContainerIR = document.getElementById("timeContainermy")
+             const timeContainertu = document.getElementById("timeContainerTurkey")
+             let date = new Date();
+             timeContainerIR.innerHTML = date.toLocaleTimeString()
+             timeContainertu.innerHTML = moment(date).add(30, 'm').toDate().toLocaleTimeString()
+
+         }
+ 
+ 
+         const myTimer = setInterval(showTime, 1000)
+ 
+     </script>
+ 
+ </body>
+</body>
+</html>

@@ -147,3 +147,18 @@
 // const colors3 = new Array("red", "green", "blue");
 // const colors4 = "red green blue".split(" ") ;
 // console.log(colors1, colors2, colors3, colors4);
+
+
+// test 
+function talk() {} 
+function walk() {} 
+const person = { 
+    firstName: "Ali", 
+    lastName: "Alavi", 
+    talk: function () { 
+      console.log("talk"); 
+    }, 
+    walk: function () { 
+      console.log("walk"); 
+    }, 
+  }; 
